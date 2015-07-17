@@ -12,3 +12,5 @@ First of all, after starting the application, you have to specify the grid dimen
 * **Stop**: stop the animation and display the last generation produced;
 * **Step**: update the grid with a new generation of cell each time this button is pressed;
 * **Clear**: clear the grid from all cells;
+
+If you want to test it, there is a compiled version inside **./dist **. It was compiled under Linux. 
