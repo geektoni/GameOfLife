@@ -18,6 +18,10 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+/**
+ * Class that generate the application layout
+ * @author Giovanni De Toni
+ */
 public class Layout extends Stage{
     
     final private static String TITLE = "Game of Life"; 
@@ -37,6 +41,11 @@ public class Layout extends Stage{
     
     private int TYPE=1;
     
+    /**
+     * Constructor that initialize the layout
+     * @param n integer that define the grid dimension
+     * @param fullscreen boolean that define fullscreen or not
+     */
     public Layout(int n, boolean fullscreen) {
         setGrid(n);
         setButtons();
@@ -58,13 +67,21 @@ public class Layout extends Stage{
         setTitle(TITLE);
         show();
     }
-    
+    /**
+     * Constructor that generate a window given s {@link Scene}
+     * @param s Custom {@link Scene}
+     */
     public Layout(Scene s) {
         setScene(s);
         setTitle(TITLE);
         show();
     }
     
+    /**
+     * Method that generate the application window, with buttons,
+     * texts and grid.
+     * @see BorderPane, VBox, HBox
+     */
     private void setLayout() {
         
         layout = new BorderPane();
@@ -97,6 +114,10 @@ public class Layout extends Stage{
         
     }
     
+    /**
+     * Method that set application buttons and handler.
+     * @see Button, Event, EventHandler
+     */
     private void setButtons(){
         start = new Button("Start");
         stop = new Button("Stop");
@@ -135,10 +156,19 @@ public class Layout extends Stage{
         });
     }
     
+    /**
+     * Method that overwrite layout current grid with a
+     * new empty one.
+     * @param n integer that define grid dimension
+     */
     private void setGrid(int n) {
         petri = new Grid(n);
     }
     
+    /**
+     * Method that return the type of grid
+     * @return integer that define the type of grid
+     */
     public int getType() {
         return TYPE;
     }

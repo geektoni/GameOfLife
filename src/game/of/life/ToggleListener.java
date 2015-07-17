@@ -4,7 +4,10 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.control.ToggleButton;
 
-
+/**
+ * Togglebutton extern listener 
+ * @author Giovanni De Toni
+ */
 public class ToggleListener implements EventHandler {
     
     private ToggleButton source;
