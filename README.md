@@ -13,4 +13,4 @@ First of all, after starting the application, you have to specify the grid dimen
 * **Step**: update the grid with a new generation of cell each time this button is pressed;
 * **Clear**: clear the grid from all cells;
 
-If you want to test it, there is a compiled version inside **./dist **. It was compiled under Linux. 
+If you want to test it, there is a compiled version inside **dist**. It was compiled under Linux. 
